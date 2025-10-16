@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_account_move_merge_wizard_form" model="ir.ui.view">
+        <field name="name">account.move.merge.wizard.form</field>
+        <field name="model">account.move.merge.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Merge Invoices" create="False" edit="False">
+                <sheet>
+                    <group>
+                        <field name="partner_id"/>
+                    </group>
+                    <group string="Merged Lines">
+                        <field name="merged_line_ids" nolabel="1">
+                            <list create="False" edit="False">
+                                <field name="name"/>
+                                <field name="quantity"/>
+                                <field name="price_unit"/>
+                                <field name="line_total"/>
+                            </list>
+                        </field>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                        <button string="Print" type="object" name="print_report" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

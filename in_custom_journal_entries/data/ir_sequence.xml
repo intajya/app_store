@@ -1,0 +1,10 @@
+<odoo>
+    <record id="seq_account_move_merge_report" model="ir.sequence">
+        <field name="name">Merged Invoice Report Sequence</field>
+        <field name="code">account.move.merge.report</field>
+        <field name="prefix">MRG/</field>
+        <field name="padding">4</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+</odoo>

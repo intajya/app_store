@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="paperformat_custom" model="report.paperformat">
+        <field name="name">Merged Invoice - Landscape A4</field>
+        <field name="default" eval="False"/>
+        <field name="format">A4</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top" eval="15"/>
+        <field name="margin_bottom" eval="15"/>
+        <field name="margin_left" eval="10"/>
+        <field name="margin_right" eval="10"/>
+        <field name="header_spacing" eval="10"/>
+    </record>
+</odoo>

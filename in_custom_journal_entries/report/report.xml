@@ -1,0 +1,12 @@
+<odoo>
+    <record id="action_report_account_move_merge" model="ir.actions.report">
+        <field name="name">Merged Invoice</field>
+        <field name="model">account.move.merge.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">in_custom_journal_entries.account_move_merge_report_template</field>
+        <field name="report_file">in_custom_journal_entries.account_move_merge_report_template</field>
+        <field name="print_report_name">'Merged Invoice - %s' % (object.partner_id.name or "N/A")</field>
+        <field name="paperformat_id" ref="paperformat_custom"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,20 @@
+<odoo>
+    <record id="action_set_payment_type_cash" model="ir.actions.server">
+        <field name="name">Merge</field>
+        <field name="model_id" ref="accountant.model_account_move"/>
+        <field name="binding_model_id" ref="accountant.model_account_move"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = {
+                        "type": "ir.actions.act_window",
+                        "res_model": "account.move.merge.wizard",
+                        "view_mode": "form",
+                        "target": "new",
+                        "context": {
+                            "active_ids": records.ids,
+                        }
+                    }
+        </field>
+    </record>
+</odoo>
