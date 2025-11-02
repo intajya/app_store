@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_hr_timesheet_line_tree_timer" model="ir.ui.view">
+        <field name="name">account.analytic.line.tree.timer</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="hr_timesheet.hr_timesheet_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="is_timer_running" invisible="1"/>
+                <button name="action_timer_start" type="object"
+                        string="Start Timer"/>
+                <button name="action_timer_stop" type="object"
+                        string="Stop Timer"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
