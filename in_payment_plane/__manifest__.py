@@ -31,6 +31,8 @@ Dependencies
 - sale_management
 - account
 """,
+    'price': 59.99,
+    'currency': 'USD',
     'author': "Intajya",
     'category': 'Sales/Payment',
     'license': 'LGPL-3',
@@ -40,7 +42,10 @@ Dependencies
         'views/payment_plane_view.xml',
         'views/sale_order_view.xml',
     ],
-    'images': ['static/description/icon.png'],
+    'images': [
+        'static/description/icon.png',
+        'static/description/icon2.png',
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
