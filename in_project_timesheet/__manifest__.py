@@ -35,7 +35,10 @@ Dependencies
         'views/project_project.xml',
         'views/timesheet_view.xml',
     ],
-    "images": ["static/description/icon.png"],
+    "images": [
+        "static/description/icon.png",
+        "static/description/icon2.png",
+               ],
     'installable': True,
     'application': False,
     'auto_install': False,
