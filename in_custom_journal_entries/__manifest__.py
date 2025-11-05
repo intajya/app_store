@@ -25,7 +25,7 @@
 
         Developed by: Mohamed Hamed
     """,
-    'author': 'Inatajya',
+    'author': 'Intajya',
     'contributors': "Mohamed Hamed  <mhmd.hmd372017@gmail.com>",
     'depends': ['accountant', 'account_reports', 'base'],
     'data': [
